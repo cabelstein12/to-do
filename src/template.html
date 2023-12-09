@@ -6,17 +6,31 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
+    <div class="header"><p>What's on the Docket?</p></div>
     <div class="container">
         <div class="sidebar">
             <ul class="list">
-                <h3 class="list-head">Current Tasks</h3>
-                <li>Dummy Item 1</li>
-                <li>Dummy Item 2</li>
+                <h3 class="list-head">Task Folder</h3>
+                <li>Dummy Folder 1</li>
+                <li>Dummy Folder 2</li>
             </ul>
         </div>  
         <div class="body">
             <div class="new-item-input">
-                Dummy new item content
+                <h3>Add A New Task</h3>
+                <form action="GET" id="task-input">
+                    <label for="title">Task Title</label><input type="text" name="title" id="title"></input>
+                    <label for="description">Description</label><input type="textarea" name="description" id="description">
+                    <label for="due-date">Completion Date</label><input type="date" name="due-date" id="due-date">
+                    <label for="priority">Priority</label>
+                    <select name="priority" id="priority">
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>    
+                    </select>
+                    <button type="submit">Add Task</button>
+                </form>
+                <h3 class="current-tasks">Tasks in Progress</h3>
             </div>
         </div>
     </div>

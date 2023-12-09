@@ -16,6 +16,7 @@ body{
     text-align: center;
     border: 1px solid black;
     padding: 0px 15px;
+    margin-top: 30px;
 }
 .container{
     /* width: 100%;
@@ -23,15 +24,23 @@ body{
     grid-area: 2/1/4/4;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    background-color: white;
+    border-top-left-radius: 45px;
     /* margin: 15px; */
 }
 
 .sidebar {
     grid-row: 1/4;
     grid-column: 1/2;
-    width: 100%;
+    width: 120px;
     border-top-left-radius: 45px;
     background-color: white;
+    text-align: start;
+    min-width: min-content;
+    /* max-width: 133px; */
+    /* padding: 0px 35px; */
+    /* margin-left: 35px; */
+    justify-self: self-end;
 }
 
 .header{
@@ -56,6 +65,7 @@ body{
 .body{
     grid-row: 1/4;
     background-color: white;
+    margin-right: 30px;
 }
 form {
     display: grid;
@@ -63,6 +73,11 @@ form {
     grid-template-columns: repeat(4, 1fr);
     /* width: 100%; */
     margin: 2px;
+}
+
+
+.list{
+    width: min-content;
 }
 
 .list-item{
@@ -109,4 +124,13 @@ form button {
     grid-column: 5;
     align-self: center;
 
+}
+
+li{
+   list-style-type: none; 
+   min-width: max-content;
+}
+
+ul {
+    padding: 2% ;
 }

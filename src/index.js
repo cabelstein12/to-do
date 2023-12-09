@@ -1,5 +1,5 @@
 import './style.css';
-import {taskForm , addTask} from './newTaskData';
+import {taskForm , addTask, taskList} from './newTaskData';
 import { updateTask } from './newTaskDom';
 
 function component(){
@@ -11,6 +11,6 @@ function component(){
     });
         
     updateTask()
-    return addedTask;
+    return taskList;
 }
 document.body.appendChild(component());

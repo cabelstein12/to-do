@@ -29,7 +29,7 @@ export function updateTask (){
     removeButton.textContent = 'X';
     
     removeButton.addEventListener('click', (event) => {
-        const clickedButton = event.target;
+        const clickedButton = event.target; //button element that is clicked 
         console.log(event.target);
         const taskIndexToRemove = parseInt(clickedButton.getAttribute('task-index'), 10);
         taskList.splice(taskIndexToRemove, 1);

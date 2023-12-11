@@ -1,6 +1,6 @@
 import { taskList } from "./newTaskData";
 
-export function updateTask (){
+export function addTaskToDom (){
 
     const createAndAppendElement = (tag, textContent, type) => {
         const element = document.createElement(tag);

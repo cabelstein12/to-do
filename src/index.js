@@ -1,16 +1,16 @@
 import './style.css';
-import {taskForm , addTask, taskList} from './newTaskData';
-import { updateTask } from './newTaskDom';
+import {taskForm , addTaskData, taskList} from './newTaskData';
+import { addTaskToDom} from './newTaskDom';
 
 function component(){
 
     taskForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        addTask(e);
-        updateTask();
+        addTaskData(e);
+        addTaskToDom();
     });
         
-    updateTask()
+    addTaskToDom();
     return taskList;
 }
 document.body.appendChild(component());

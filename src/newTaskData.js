@@ -10,7 +10,7 @@ export const taskList = [
 ];
 export const taskForm = document.getElementById('task-input');
 
-export function addTask(){
+export function addTaskData(){
 
     const newTaskData = new FormData(taskForm);
     const newTask = {
